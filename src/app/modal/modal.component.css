@@ -1,0 +1,305 @@
+/* a, button{
+
+    margin-top: 20%;
+    margin-left: 40% 
+} */
+/* #myModal{
+    margin-right: 50%;
+    zoom: 0;
+} */
+
+* {
+    box-sizing: border-box;
+  }
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  html {
+    font-family: "Lucida Sans", sans-serif;
+  }
+  
+  .header {
+    background-color: #9933cc;
+    color: #ffffff;
+    padding: 15px;
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #33b5e5;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .menu li:hover {
+    background-color: #0099cc;
+  }
+  
+  .aside {
+    background-color: #33b5e5;
+    padding: 15px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .footer {
+    background-color: #0099cc;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 15px;
+  }
+  
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  
+  @media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  .row{
+      margin-left: 5%;
+      margin-right: 5%;
+  }
+ 
+.flipButton{
+  width: 93%;
+  height: 40px;
+  font-size: 15px;
+  margin-top: 80%;
+  margin-right: 50%;
+}
+.idButton{
+  margin-top: 70%;
+  width:50%;
+  align-self: center;
+}
+#row1{
+  margin-top: 60px;
+}
+/* 
+#cardLabel {
+  margin-top: 25%;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  display: block;
+  width: 320px;
+  height: 320px;
+  position: absolute;
+  left: 50%;
+  background-color: #0f3d3d;
+  top: 30%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+} */
+
+.player {
+  /* position: relative; ll */
+  height: 100%;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all 600ms;
+  transition: all 600ms;
+  
+  /* z-index: 20; */
+}
+
+  .player div {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      /* background: #FFF;ll
+      text-align: center;ll
+      line-height: 200px;ll */
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      backface-visibility: hidden;
+      /* border-radius: 50%;ll
+      margin-top: 5px;ll */
+  }
+  .player img {
+    /* border-radius: 50%;ll */
+  }
+
+  .player .back {
+      background: #124444;
+      color: #FFF;
+      -webkit-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+      text-align: center;
+      
+      
+  }
+  .flip-card-back input{
+    width: 200px;
+    margin-left: 17%;;
+
+    height: 35px;
+    font-size: 20px;
+  }
+  .flip-card-back button{
+    width: 50%;
+    height: 45px;
+    font-size: 100%;
+    margin-top: 20px;
+  }
+
+.player.voted {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+
+.ag-body-viewport-wrapper.ag-layout-normal {
+  overflow-x: scroll;
+}
+#row2{
+  margin-left: 15%;
+}
+.ag-theme-fresh{
+  /* margin-top: 3%;*/
+  /* margin-left: 20%; */
+  color: black; 
+  /* background-color: sandybrown !important; */
+   overflow: hidden;
+   flex-grow: 1; 
+  flex-direction: row;
+  width: 100%; height: 500px;
+  overflow-x: scroll;
+  overflow-y: scroll;
+}
+.ag-theme-fresh .sick-days-warning {
+  /* background-color: sandybrown !important; */
+}
+.ag-theme-fresh .sick-days-breach {
+  /* background-color: lightcoral !important; */
+}
+@-webkit-keyframes mymove {
+  /* 50% {text-shadow: 10px 20px 30px rgb(73, 71, 76);} */
+}
+
+@keyframes mymove {
+  /* 50% {text-shadow: 10px 20px 30px rgb(73, 71, 76);} */
+}
+h3{
+  font-family: Courier New ;
+  color: rgba(255, 236, 255, 0.911);
+  font-size: 40px;
+  font-weight: 600;
+  
+}
+#myDIV {
+  /* -webkit-animation: mymove 5s infinite; 
+  animation: mymove 5s infinite; */
+}
+
+/* Back */
+
+
+
+
+ 
+.flip-card {
+  background-color: #0f3d3d;
+  width: 300px;
+  height: 300px;
+  border: 1px solid #0f3d3d;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  margin-top: 23%;
+  }
+  
+  .flip-card-inner {
+  /* position: relative; */
+  /* width: 100%;
+  height: 100%; */
+  text-align: center;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+  /* background-color: #bbb; */
+  color: black;
+  /* background-color: #364163; */
+  background-color: #0f3d3d;
+  border-radius: 7%; 
+  
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+  /* background-color: dodgerblue; */
+  color: white;
+  transform: rotateY(180deg);
+  /* padding: 10%; */
+  background-color: #0f3d3d;
+  border-radius: 7%; 
+  
+  }
+  
+  #tweetId{
+      height: 35px;
+      font-size: 20px;
+  }

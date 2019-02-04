@@ -1,0 +1,67 @@
+.navbar {
+    height: 20px;
+    background-color: #00394d;
+  } 
+  .navbar-brand {
+    padding: 0 50px 0 20px;
+    height: 20px;
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "Garamond";
+  }
+  .navbar-toggle {
+    margin-top: 20px;
+    padding: 9px;
+  }
+  @media (min-width: 78px) {
+    .navbar-nav > li > a {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 10 px;
+      padding-right: 10px;
+      line-height: 20px;
+    }
+  }
+  .navbar-collapse {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  div{
+   font-family: "Garamond";
+   font-size: 20px;
+  }
+  .dropbtn {
+    color: white;
+    padding: 16px;
+    font-size: 20px;
+  }
+
+  .dropbtn:hover {
+    color: white;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {opacity: 0.5;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  

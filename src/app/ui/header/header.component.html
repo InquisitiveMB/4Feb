@@ -1,0 +1,31 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top rounded">  
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li><a class="nav-item nav-link active" routerLink="/">Home</a></li>
+      <div class="dropdown">
+          <li class = "nav-item nav-link dropbtn">Recommendations
+            <div class="dropdown-content" style="background: #00394d;">
+                <a routerLink="/cards">Movie</a>
+                <a href="#">Music</a>
+                <a href="#">Book</a>
+                <a href="#">Job</a>
+                <a href="#">Team Role</a>
+                <a href="#">HR Department</a>
+            </div>
+          </li>
+      </div>
+      <li><a class="nav-item nav-link" href="#">Contact</a></li>
+      <li><a routerLink="/login" class="nav-item nav-link"><span class="login">Login</span></a></li>
+    </ul>
+  </div>
+  <img src="assets/img/logo.png" width="40" height="40" class="img-responsive logo">
+  <a class="navbar-brand" href="#">TechnoPandit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+</nav>
+
+
+<div class="inner-outlet">
+	<router-outlet></router-outlet>
+</div>

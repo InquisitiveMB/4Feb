@@ -1,0 +1,63 @@
+<div class="container">
+		<div class="row row-grid">
+				<div class="col-md mx-2">
+					<label>  
+						<div id="player" class="player" [class.voted]="flipped">
+							<div class="front">
+								<div class="card">
+									
+									<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+									
+									<div class="card-body">
+										
+										<h2 class="card-title">Card title</h2>
+									</div>
+								</div>
+							</div>
+							<div class="back">Back</div>
+						</div>
+						<button class="btn-primary" ngbButton (click)="flipIt()">Flip: {{ flipped }}</button>
+					</label>
+				</div>
+				<div class="col-md mx-2">
+						<label>  
+							<div id="player" class="player" [class.voted]="flipped">
+								<div class="front">
+									<div class="card">
+										
+										<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+										
+										<div class="card-body">
+											
+											<h2 class="card-title">Card title</h2>
+										</div>
+									</div>
+									
+								</div>
+								<div class="back">Back</div>
+							</div>
+							<button class="btn-primary" ngbButton (click)="flipIt()">Flip: {{ flipped }}</button>
+						</label>
+				</div>
+				<div class="col-md mx-2">
+							<label>  
+								<div id="player" class="player" [class.voted]="flipped">
+									<div class="front3">
+										<div class="card">
+											
+											<img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/43.jpg" alt="Card image cap">
+										
+											<div class="card-body">
+											
+												<h2 class="card-title">Card title</h2>
+											</div>
+										</div>
+										
+									</div>
+									<div class="back">Back</div>
+								</div>
+								<button class="btn-primary" ngbButton (click)="flipIt()">Flip: {{ flipped }}</button>
+							</label>
+				</div>
+	  </div>
+</div>

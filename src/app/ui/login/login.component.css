@@ -1,0 +1,144 @@
+/* h1{
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+}
+.login-page{
+    width: 360px;
+    padding: 5% 0 0;
+    margin: auto;
+    margin-top: 5%;
+}
+.form{
+    position: relative;
+    z-index: 1;
+    background: rgba(71, 81, 128, 0.8);
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 40px;
+    text-align: center;
+}
+.form input{
+    font-family: "Georgia";
+    outline: 1;
+    width: 100%;
+    border:0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form button{
+    font-family: "Georgia";
+    text-transform: uppercase;
+    outline: 0;
+    background: #4caf50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+.form button:hover,.form button:active{
+    background: #43a047;
+}
+.message:hover{    
+    color: #43a055;
+}
+.form .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+.form .message a{
+    color: #4caf50;
+    text-decoration: none;
+}
+.form .register-form{
+    display: none;
+} */
+
+
+h1{
+    color: white;
+    font-size: 52px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 0;
+}
+.login-page{
+    width: 500px;
+    margin: auto;
+    margin-top: 5%;
+}
+.form1{
+    position: relative;
+    z-index: 1;
+    background: rgba(71, 81, 128, 0.8);
+    width: 430px;
+    margin: 0 auto 100px;
+    padding: 40px;
+    text-align: center;
+}
+.error{
+    color:salmon;
+}
+.form1 input{
+    font-family: "Georgia";
+    /* outline: 1; */
+    background: #f2f2f2;
+    width: 300px;
+    /* border:0; */
+    margin-left: 25px;
+    height: 30px;
+    /* padding: 15px 15px 0px 15px; */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form1 select{
+    font-family: "Georgia";
+    outline: 1;
+    background: #f2f2f2;
+    width: 300px;
+    margin-left: 25px;
+    height: 30px;
+    /* padding: 15px 15px 0px 15px; */
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.form1 label{
+    color: white;
+    width: 100%;
+    text-align: left;
+    margin-left: 25px;
+}
+.form1 button{
+    font-family: "Georgia";
+    text-transform: uppercase;
+    outline: 0;
+    background: #4caf50;
+    width: 300px;
+    border-color: #4caf50;
+    padding: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.form1 button:hover,.form1 button:active{
+    background: #43a047;
+    border-color: #4caf50;
+}
+.form1 .message{
+    margin: 15px 0 0;
+    color: aliceblue;
+    font-size: 12px;
+}
+.form1 .message a{
+    color: #4caf50;
+    text-decoration: none;
+}

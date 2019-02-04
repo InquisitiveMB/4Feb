@@ -1,0 +1,148 @@
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+  Open modal
+</button>
+
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <div class="modal-body">
+        Modal body..
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<div class="row" id="row1">
+  <div class="col-md-4 col-s-4 menu">
+    <div id="cardLabel">
+      <div class="card mb-4 flip-card">
+          <!-- <label> -->
+          <div class="flip-card-inner" id="jobCard" [class.voted]="flipped">
+            <!--Card image-->
+            <div class="flip-card-front">
+              <div class="view overlay">
+                <img class="card-img-top h-100 w-100" src="assets/img/movies4.jpg" alt="Card image cap">
+                <a href="#!">
+                <div class="mask rgba-white-slight"></div>
+                </a>
+              </div>
+              <!--Card content-->
+              <div class="card-body">
+                <!--Title-->
+                <h4 class="card-title" style="font:bold; font-size:30px; color:white;"> Movies</h4>
+                <!--Text-->
+                <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+                <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+                <!-- <button type="button" class="btn btn-outline-info flipButton" ngbButton (click)="flipIt()">Movies</button> -->
+              </div>
+            </div>
+            <div class="back flip-card-back">
+                <div class="form-group">
+                    <label for="" style="margin-top:15px;">Movies</label>
+                    <br><br>
+                    <label for="usr">Enter Twitter Id</label>
+                    <br>
+                    <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id" [(ngModel)]="credentialsID.twitterID_Card">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-info" (click)="submit()">Submit</button>
+                </div>
+            </div>
+          </div>
+          <!-- </label>    -->
+        </div>   
+    <!-- <div class="row">
+      <input type="text" style="height: 25px" [(ngModel)]="credentialsID.twitterID_Card">
+    </div> -->
+  </div>
+  </div>
+
+
+  <div class="col-md-8 col-s-8">
+    <ag-grid-angular #agGrid class="ag-theme-fresh" enableColResize suppressMenuHide enableFilter [rowSelection]="rowSelection"
+      [overlayLoadingTemplate]="overlayLoadingTemplate" [columnDefs]="columnDefs" [rowData]="rowData" [animateRows]=true
+      [enableCellChangeFlash]="true" [sendToClipboard]="sendToClipboard" [rowDragManaged]="true" [defaultColDef]="defaultColDef"
+      [enableSorting]="true" [masterDetail]="true" [rowClassRules]="rowClassRules" [gridOptions]="gridOptions"
+      (selectionChanged)="onSelectionChanged($event)" (gridReady)="onGridReady($event)" (modelUpdated)="onModelUpdated()"
+      (rowDataChanged)="rowChanged($event)">
+    </ag-grid-angular>
+
+    <!-- <ag-grid-angular
+          #agGrid
+          id="myGrid"
+          class="ag-theme-balham"
+          [columnDefs]="columnDefs"
+          [rowData]="rowData"
+          (gridReady)="onGridReady($event)"
+        ></ag-grid-angular> -->
+  </div>
+
+  <!-- <div class="col-3 col-s-12">
+    <div class="aside">
+      <h2>What?</h2>
+      <p>Chania is a city on the island of Crete.</p>
+      <h2>Where?</h2>
+      <p>Crete is a Greek island in the Mediterranean Sea.</p>
+      <h2>How?</h2>
+      <p>You can reach Chania airport from all over Europe.</p>
+    </div>
+  </div> -->
+</div>
+<div class="row">
+  <div class="col-5 col-s-5">
+
+    <!-- <div id="myDIV">
+      <h3>Transaction Status</h3>
+    </div>
+
+    <div class="data">
+      <br>
+      <br>
+      <span style="color:rgb(127,219,145)">
+        Number of Completed Transaction: {{sanctionComplete}}
+      </span>
+      <br>
+      <span style="color:rgb(255,85,107)">
+        Number of Failed Transaction:{{sancationFail+validationFail+validationPass+rollBack}}
+      </span>
+      <br><br>
+      Number of Transactions Failed due to :
+      <br>
+      Sanction Fail: {{sancationFail}}
+      <br>
+      Invalid Data :{{validationFail}}
+      <br>
+      Insufficient Balance:{{validationPass}}
+    </div>
+
+    <br><br><br><br> -->
+
+    <!-- correct -->
+
+
+    <!-- <div class="grow">
+      <canvas baseChart [chartType]="pieChartType" [data]="pieChartData" [labels]="pieChartLabels" [colors]="pieChartColors"
+      [legend]="legend" [options]="options" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)">
+      </canvas>
+    </div> -->
+
+  </div>
+</div>
+
+<!-- 
+<div class="footer">
+  <p>Resize the browser window to see how the content respond to the resizing.</p>
+</div> -->

@@ -1,0 +1,223 @@
+<!-- Card deck -->
+<div class="cardNav">
+<h2>Recommendations</h2>
+
+<div class="card-deck" id="firstDeck">
+  <!-- Card -->
+  <div class="card mb-4 flip-card">
+    <!-- <label> -->
+    <div class="flip-card-inner" id="jobCard" [class.voted]="flipped">
+      <!--Card image-->
+      <div class="flip-card-front">
+        <div class="view overlay">
+          <img class="card-img-top h-100 w-100" src="assets/img/job2.jpg" alt="Card image cap">
+          <a href="#!">
+          <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <!-- <h4 class="card-title"></h4> -->
+          <!--Text-->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-outline-info" ngbButton (click)="flipIt()">Job</button>
+        </div>
+      </div>
+      <div class="back flip-card-back">
+          <div class="form-group">
+              <label for="">Job</label>
+              <br><br>
+              <label for="usr">Enter Twitter Id</label>
+              <br>
+              <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id" [(ngModel)]="credentialsID.twitterID_Card">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info" (click)="submit()">Submit</button>
+          </div>
+      </div>
+    </div>
+    <!-- </label>    -->
+  </div>         
+
+  <!-- Card -->
+  <div class="card mb-4 flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="view overlay">
+          <img class="card-img-top h-100 w-100" src="assets/img/recruitment.jpg" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <!-- <h4 class="card-title">Card title</h4> -->
+          <!--Text-->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-outline-info">Recruitment</button>
+        </div>
+      </div>
+      <div class="back flip-card-back">
+        <div class="form-group">
+          <label for="">Recruitment</label>
+          <br><br>
+          <label for="usr">Enter Twitter Id</label>
+          <br>
+          <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+        </div>
+        <div class="form-group">
+          <button class="btn btn-info">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="card mb-4 flip-card">
+    <div class="flip-card-inner">
+      <div class="flip-card-front">
+        <div class="view overlay">
+          <img class="card-img-top h-100 w-100" src="assets/img/team2.png" alt="Card image cap">
+          <a href="#!">
+            <div class="mask rgba-white-slight"></div>
+          </a>
+        </div>
+        <!--Card content-->
+        <div class="card-body">
+          <!--Title-->
+          <!-- <h4 class="card-title">Card title</h4> -->
+          <!--Text-->
+          <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+          <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+          <button type="button" class="btn btn-outline-info">Team Formation</button>
+        </div>
+      </div>
+      <div class="back flip-card-back">
+        <div class="form-group">
+          <label for="">Team Formation</label>
+          <br><br>
+          <label for="usr">Enter Twitter Id</label>
+          <br>
+          <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info">Submit</button>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Card deck -->
+<div class="card-deck">
+    <!-- Card -->
+    <div class="card mb-4 flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="view overlay">
+            <img class="card-img-top h-100 w-100" src="assets/img/movies4.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <!-- <h4 class="card-title">Card title</h4> -->
+            <!--Text-->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-outline-info">Movies</button>
+          </div>
+        </div>
+        <div class="back flip-card-back">
+          <div class="form-group">
+            <label for="">Movies</label>
+            <br><br>
+            <label for="usr">Enter Twitter Id</label>
+            <br>
+            <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Card -->
+    <div class="card mb-4 flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="view overlay">
+            <img class="card-img-top h-100 w-100" src="assets/img/music3.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <!-- <h4 class="card-title">Card title</h4> -->
+            <!--Text-->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-outline-info">Music</button>
+          </div>
+        </div>
+        <div class="back flip-card-back">
+          <div class="form-group">
+            <label for="">Music</label>
+            <br><br>
+            <label for="usr">Enter Twitter Id</label>
+            <br>
+            <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <!-- Card -->
+    <div class="card mb-4 flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <div class="view overlay">
+            <img class="card-img-top h-100 w-100" src="assets/img/books2.jpg" alt="Card image cap">
+            <a href="#!">
+              <div class="mask rgba-white-slight"></div>
+            </a>
+          </div>
+          <!--Card content-->
+          <div class="card-body">
+            <!--Title-->
+            <!-- <h4 class="card-title">Card title</h4> -->
+            <!--Text-->
+            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> -->
+            <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+            <button type="button" class="btn btn-outline-info">Books</button>
+          </div>
+        </div>
+        <div class="back flip-card-back">
+          <div class="form-group">
+            <label for="">Books</label>
+            <br><br>
+            <label for="usr">Enter Twitter Id</label>
+            <br>
+            <input type="text" class="form-control" id="tweetId" placeholder="Twitter Id">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-info">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Card deck -->
+</div>

@@ -1,0 +1,17 @@
+.card-deck{
+    padding: 0 150px 0px 150px;
+}
+#firstDeck{
+    padding-top: 80px;
+}
+.card{
+    /* background-color: transparent; */
+}
+.card-title{
+    font: bold;
+    font-size: 25px;
+    font-weight: 500px;
+    width: 100%;
+    text-align: center;
+    /* align-self: center; */
+}
